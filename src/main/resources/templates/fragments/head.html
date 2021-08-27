@@ -36,7 +36,7 @@
                 -moz-animation: fadein 2s; /* Firefox */
                 -webkit-animation: fadein 2s; /* Safari and Chrome */
                 -o-animation: fadein 2s; /* Opera */
-                background-color: var(--lblue);
+                background-color: var(--green);
                 color: var(--dblue);
             }
 
@@ -99,9 +99,9 @@
                 margin: auto;
             }
 
-            .navbar-custom .navbar-brand,
-            .navbar-custom .navbar-text {
-                color: var(--lblue);
+            /* large number helps nav remain top layer */
+            .navbar {
+                z-index: 1000;
             }
 
         </style>
