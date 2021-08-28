@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
 
@@ -7,20 +6,38 @@
   <!-- Start of head content specific to page -->
   <title>GreetMaggie</title>
   <!-- End of head content specific to page -->
+  <style>
+    .greet{
+      background-color: white;
+      text-align: center;
+      border: 5px white;
+      font-family: "Arial";
+      padding: 10px 10px 10px 10px;
+      margin-top: 35px;
+      margin-left: 30%;
+      font-size: 30px;
+      color: #666666;
+      height: 200px;
+      width: 700px;
+      text-align: center;
+    }
+  </style>
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag">
   <!-- Start of body content specific to page -->
-  <div class="contact" style="height: 35vh;">
-    <div class="row justify-content-left" style="margin: 2%;">
-      <form action="/greetMaggie" method="GET" id="greetForm">
-        <div>
-          <label for="greetField">Type a greeting name?</label>
-          <input name="name" id="greetField">
-          <button>Greetings!</button>
-          <p th:text="'Greetings, ' + ${name} + '! My name is Maggie.'"></p>
-        </div>
-      </form>
+  <div class="contact">
+    <div class="greet">
+      <div class="row justify-content-center">
+        <form action="/greetMaggie" method="GET" id="greetForm">
+          <div>
+            <label for="greetField">Type a greeting name?</label>
+            <input name="name" id="greetField">
+            <button>Greetings!</button>
+            <p th:text="'Greetings, ' + ${name} + '! My name is Maggie.'"></p>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <!-- End of body content specific to page -->
