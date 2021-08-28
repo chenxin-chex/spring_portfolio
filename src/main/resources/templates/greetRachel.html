@@ -17,13 +17,28 @@
         <div>
           <label for="greetField">Type a greeting name?</label>
           <input name="name" id="greetField">
-          <button>Greetings!</button>
+          <button onclick="myFunction()">Greetings!</button>
+          <p hidden="true" id="mySecret">My favorite color is green!</p>
+          <script>
+            function myFunction() {
+              document.getElementById("mySecret").removeAttribute("hidden")
+            }
+          </script>
+          <p id="demo"></p>
           <p th:text="'Greetings, ' + ${name} + '! My name is Rachel.'"></p>
+
         </div>
       </form>
     </div>
+    <script>
+      document.write("<p>VERIFY</p>");
+    </script>
   </div>
   <!-- End of body content specific to page -->
-</div></body>
+</div>
+
+
+</body>
+
 
 </html>
