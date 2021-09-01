@@ -19,17 +19,17 @@ public class Main {
 
         double grade5 = 75.00 ;
 
-        double grade6 = (grade1 + grade2)/2 ;
+        double avg12 = (grade1 + grade2)/2 ;
 
-        double grade7 = (grade3 + grade4)/2 ;
+        double avg34 = (grade3 + grade4)/2 ;
 
-        double grade8 = (grade6 + grade7 + grade5/2)/3 ;
+        double finalAvg = (avg12 + avg34 + grade5/2)/3 ;
 
-        System.out.println("grade6 is " + grade6);
+        System.out.println("The average of grades 1 and 2 is " + avg12);
 
-        System.out.println("grade7 is " + grade7);
+        System.out.println("The average of grades 3 and 4 is " + avg34);
 
-        System.out.println("grade8 is " + grade8);
+        System.out.println("The final average is " + finalAvg);
 
 
     }
